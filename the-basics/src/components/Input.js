@@ -1,5 +1,5 @@
 function Input(props) {
-    return <input type="text" name="toDoInput" />
+    return <input className='inputText' type="text" name="toDoInput" />
 }
 
 export default Input;
