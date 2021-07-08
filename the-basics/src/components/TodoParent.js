@@ -5,7 +5,27 @@ import {useState} from "react";
 
 function TodoParent(props) {
 
-    const initialTodos = [{text: "test1", done: false}, {text: "test2", done: true}, {text: "test3",done: false}, {text: "test4", done: true}, {text: "test5", done: false}];
+    const initialTodos = [
+        {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc libero ipsum, ultricies et odio vel, convallis molestie orci. Fusce ultrices.",
+            done: false
+        },
+        {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo sagittis mauris. Interdum et malesuada fames ac ante ipsum primis.",
+            done: true
+        },
+        {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut accumsan augue. Vivamus quis pulvinar lacus. Ut eu sapien nisl",
+            done: false
+        },
+        {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas rhoncus consectetur. Morbi enim purus, porttitor a pulvinar a, posuere.",
+            done: true
+        },
+        {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec erat id purus sagittis hendrerit. Aenean gravida turpis sit amet.",
+            done: false
+        }];
 
     const [todos, setTodos] = useState(initialTodos);
 
@@ -14,9 +34,10 @@ function TodoParent(props) {
     }
 
     const addTodo = (message) => {
-        if (message !== ""){
-        const newTodo = [...todos, {text: message, done: false}]
-        setTodos(newTodo)}
+        if (message !== "") {
+            const newTodo = [...todos, {text: message, done: false}]
+            setTodos(newTodo)
+        }
     }
 
     console.log(todos)

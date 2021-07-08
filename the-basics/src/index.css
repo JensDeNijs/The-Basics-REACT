@@ -23,7 +23,9 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
     color: white;
 }
-
+h1{
+    font-size: 100px;
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -31,24 +33,20 @@ code {
 
 .App {
     margin: auto;
-    width: 50%;
+
     border: 3px;
     text-align: center;
 }
 
 ul {
-    width: 70%;
+
     margin: auto;
     padding-top: 0;
 }
 
 li {
-    width: 100%;
     text-align: left;
     background-color: #232323;
-    padding: 5px;
-    margin: 50px;
-    margin-left: -20px;
     list-style-type: "\1F44D"
 }
 
@@ -83,4 +81,7 @@ li {
 }
 .inputText:focus::placeholder{
     color: transparent;
+}
+.todoform{
+    background-color: black;
 }

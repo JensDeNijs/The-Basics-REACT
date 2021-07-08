@@ -10,12 +10,14 @@ function TodoForm(props) {
 
     }
     return (
-        <div>
+        <div className="container-md sticky-top todoform">
+            <div className="row-cols-1 pb-2 pt-5">
             <form>
                 <input ref={inputRef} className='inputText' type="text" placeholder="What needs to get done?"/>
                 <br/>
                 <button className='inputButton' onClick={clickHandler}>Submit</button>
             </form>
+            </div>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 function Header(props) {
     return (
-        <header>
+        <header className="py-5">
             <h1>ToDo List</h1>
         </header>
     );
