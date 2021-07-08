@@ -39,7 +39,7 @@ code {
 ul {
     width: 70%;
     margin: auto;
-    padding-top: 0%;
+    padding-top: 0;
 }
 
 li {
@@ -51,6 +51,7 @@ li {
     margin-left: -20px;
     list-style-type: "\1F44D"
 }
+
 
 .inputButton {
     background-color: black;
@@ -73,7 +74,13 @@ li {
     width: 70%;
     transition: padding 0.4s ease-in-out;
     font-size: 20px;
+    text-align: center;
+
 }
 .inputText:focus{
     padding: 20px;
+    font-size: 25px;
+}
+.inputText:focus::placeholder{
+    color: transparent;
 }

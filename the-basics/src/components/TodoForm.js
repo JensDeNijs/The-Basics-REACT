@@ -1,16 +1,20 @@
-import Input from "./Input";
-import Submit from "./Submit";
+import {useRef} from "react";
 
 function TodoForm(props) {
-    const onClick= () =>{
-        console.log("click!")
+    const inputRef = useRef();
+
+    const clickHandler = (e) => {
+        e.preventDefault()
+        const inputElement = inputRef.current;
+        props.onAdd(inputElement.value)
+
     }
     return (
         <div>
             <form>
-                <Input />
-                <br />
-                <Submit onClick={onClick}/>
+                <input ref={inputRef} className='inputText' type="text" placeholder="What needs to get done?"/>
+                <br/>
+                <button className='inputButton' onClick={clickHandler}>Submit</button>
             </form>
         </div>
     );
