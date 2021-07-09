@@ -7,8 +7,8 @@ function TodoForm(props) {
         e.preventDefault()
         const inputElement = inputRef.current;
         props.onAdd(inputElement.value)
-
     }
+
     return (
         <div className="container-md sticky-top todoform">
             <div className="row-cols-1 pb-2 pt-5">

@@ -1,14 +1,14 @@
 import Header from "./Header";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
-import {useState , useEffect} from "react";
+import {useState, useEffect} from "react";
 
 const LSKEY = "MyTodoApp";
 
 function TodoParent(props) {
 
-    const initialTodos = () => JSON.parse(localStorage.getItem(LSKEY + ".todos")) ||
-        [{
+    const initialTodos = () => JSON.parse(localStorage.getItem(LSKEY + ".todos")) || [
+        {
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc libero ipsum, ultricies et odio vel, convallis molestie orci. Fusce ultrices.",
             done: false
         },
@@ -45,9 +45,6 @@ function TodoParent(props) {
     useEffect(() => {
         window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
     }, [todos]);
-
-    console.log(todos)
-
 
     return (
         <div>
