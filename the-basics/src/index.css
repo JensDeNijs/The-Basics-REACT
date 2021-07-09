@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Playfair+Display&display=swap');
-
 @counter-style thumbs {
     system: cyclic;
     symbols: "\1F44D";
@@ -47,7 +46,7 @@ ul {
 li {
     text-align: left;
     background-color: #232323;
-    list-style-type: "\1F44D"
+    list-style-type: "\1F44D";
 }
 
 
